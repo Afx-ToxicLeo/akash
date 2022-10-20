@@ -8871,9 +8871,7 @@ teks = `╭────────────
  x ._zombie_
  x ._horned_ `,`
 let buttons = [
-{buttonId: `listmenu`, buttonText: {displayText: 'LIST MENU 🌺'}, type: 1}
-{buttonId: `owner`, buttonText: {displayText: 'OWNER 🌺'}, type: 1}
-]
+{buttonId: `listmenu`, buttonText: {displayText: 'LIST MENU 🌺'}, type: 1}]
 let buttonMessage = {
 image: thum,
 jpegThumbnail: log0,
