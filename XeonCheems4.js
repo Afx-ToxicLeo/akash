@@ -8728,32 +8728,6 @@ reply(`Successfully Reported To The Owner\n\nPlease Make Sure The Bug Is Valid, 
 case 'sc': case 'script': case 'donate': case 'donate': case 'cekupdate': case 'updatebot': case 'cekbot': case 'sourcecode': {
 	if (isBan) return reply(mess.ban)	 			
 if (isBanChat) return reply(mess.banChat)
-teks = `*「 ${global.botname} Script 」*\n\nYouTube: ${global.websitex}\nGitHub: ${global.botscript}\n\nDont forget to donate 🍜`
-let buttons = [
-{buttonId: `menu`, buttonText: {displayText: 'Menu 🌺'}, type: 1}
-]
-let buttonMessage = {
-image: thum,
-jpegThumbnail: log0,
-caption: teks,
-footer: `${botname}`,
-buttons: buttons,
-headerType: 4,
-contextInfo:{externalAdReply:{
-title:"I deserve something for my hardwork",
-body: "Click to donate", 
-thumbnail: fs.readFileSync("XeonMedia/theme/cheemspic.jpg"),
-mediaType:1,
-mediaUrl: 'https://telegra.ph/file/8737b098fd5702daeb7e0.jpg',
-sourceUrl: "https://telegra.ph/file/8737b098fd5702daeb7e0.jpg"
-}}
-}
-XeonBotInc.sendMessage(m.chat, buttonMessage, { quoted: m })
-}
-break
-case 'menu': case 'help': case 'donate': {
-	if (isBan) return reply(mess.ban)	 			
-if (isBanChat) return reply(mess.banChat)
 teks = `╭────────────
  ❏ _Owner_ : AKASH VAZA 
  ❏ _Mode_ : PUBLIC
@@ -8869,9 +8843,10 @@ teks = `╭────────────
  x ._demon_
  x ._bloody_
  x ._zombie_
- x ._horned_ `,`
+ x ._horned_ `
 let buttons = [
-{buttonId: `listmenu`, buttonText: {displayText: 'LIST MENU 🌺'}, type: 1}]
+{buttonId: `menu`, buttonText: {displayText: 'Menu 🌺'}, type: 1}
+]
 let buttonMessage = {
 image: thum,
 jpegThumbnail: log0,
@@ -8884,8 +8859,8 @@ title:"I deserve something for my hardwork",
 body: "Click to donate", 
 thumbnail: fs.readFileSync("XeonMedia/theme/cheemspic.jpg"),
 mediaType:1,
-mediaUrl: 'https://www.instagram.com/p/CiSE_mxPKhI/?igshid=YmMyMTA2M2Y=',
-sourceUrl: "https://github.com/Afx-ToxicLeo/akash"
+mediaUrl: 'https://telegra.ph/file/8737b098fd5702daeb7e0.jpg',
+sourceUrl: "https://telegra.ph/file/8737b098fd5702daeb7e0.jpg"
 }}
 }
 XeonBotInc.sendMessage(m.chat, buttonMessage, { quoted: m })
